@@ -45,8 +45,8 @@ const Pesquisa = () => {
         <input type='text' className='p-4 block shadow bg-green-100 my-2 rounded' placeholder='Nome' onChange={onChange} name='Nome' value={form.Nome} />
         <label className='font-bold'>E-mail: </label>
         <input type='text' className='p-4 block shadow bg-green-100 my-2 rounded' placeholder='Email' onChange={onChange} name='Email' value={form.Email} />
-        <label className='font-bold'>Whatsapp: </label>
-        <input type='text' className='p-4 block shadow bg-green-100 my-2 rounded' placeholder='Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
+        <label className='font-bold' for='Whatsapp'>Whatsapp: </label>
+        <input type='text' className='p-4 block shadow bg-green-100 my-2 rounded' placeholder='Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} id='Whatsapp' />
         <label className='font-bold'>Nota: </label>
         <div className='flex py-6'>
 
@@ -54,7 +54,7 @@ const Pesquisa = () => {
             return (
               <label className='block w-1/6 text-center'>
                 {nota}<br />
-                <input type='radio' name='Nota' value={nota} onChange={onChange} />
+                <input type='radio ' name='Nota' value={nota} onChange={onChange} />
               </label>
             )
           })
